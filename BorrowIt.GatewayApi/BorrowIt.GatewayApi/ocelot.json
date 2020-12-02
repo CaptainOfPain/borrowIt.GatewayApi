@@ -1,12 +1,12 @@
 {
-  "ReRoutes": [
+  "Routes": [
     {
       "DownstreamPathTemplate": "/api/{catchAll}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 7000
+          "Host": "172.20.0.6",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/toDo/{catchAll}"
@@ -16,8 +16,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5000
+          "Host": "172.20.0.5",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/api/auth/{catchAll}"
