@@ -5,8 +5,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "172.20.0.6",
-          "Port": 80
+          "Host": "todo",
+          "Port": 8082
         }
       ],
       "UpstreamPathTemplate": "/api/toDo/{catchAll}"
@@ -16,8 +16,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "172.20.0.5",
-          "Port": 80
+          "Host": "auth",
+          "Port": 8081
         }
       ],
       "UpstreamPathTemplate": "/api/auth/{catchAll}"

@@ -30,6 +30,7 @@ namespace BorrowIt.GatewayApi
         {
             services.AddControllers();
             services.AddOcelot(Configuration);
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +49,7 @@ namespace BorrowIt.GatewayApi
             app.UseHttpsRedirection();
 
             await app.UseOcelot();
+            app.UseCors(ctx => ctx.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
         }
     }
 }
